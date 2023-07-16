@@ -23,6 +23,21 @@ main {
   margin: 0 auto;
 }
 
+.section-description {
+  color: #727272;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  margin-top: 10px;
+}
+
+.section-title {
+  color: #131313;
+  font-size: 45px;
+  font-weight: 700;
+}
+
 /* Header Styles */
 header {
   background-color: rgba(255, 144, 14, 0.1);
@@ -47,11 +62,6 @@ nav li a {
   line-height: 26px;
   text-decoration: none;
 }
-.nav-title {
-  color: #131313;
-  font-size: 45px;
-  font-weight: 700;
-}
 
 /* Banner Styles */
 .banner-content {
@@ -69,14 +79,6 @@ nav li a {
 }
 .banner img {
   width: 100%;
-}
-.banner-description {
-  color: #727272;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6rem;
-  margin-top: 10px;
 }
 
 .team-container {
@@ -117,19 +119,54 @@ nav li a {
   font-weight: 700;
 }
 
+/* Facts section Styles */
+.facts-box-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.facts-box {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 40px 30px;
+}
+.states {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #424242;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.facts-content {
+  max-width: 542px;
+}
+.facts-description {
+  text-align: left;
+  margin-bottom: 80px;
+}
+
 /* Small/mobile device */
 
 @media screen and (max-width: 576px) {
   .nav,
-  .team-container {
+  .team-container,
+  .facts-box-container {
     flex-direction: column;
   }
   header,
   .team-content {
-    padding: 20px;
+    padding: 0 20px;
   }
   .team-img-container {
     grid-template-columns: 1fr;
+  }
+  .facts-content {
+    padding: 0 20px;
+  }
+  .facts-box {
+    margin-top: 10px;
   }
 }
 
@@ -137,11 +174,23 @@ nav li a {
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .nav,
+  .facts-box-container,
   .team-container {
     flex-direction: column;
   }
   header {
     padding: 20px;
     margin: auto;
+  }
+  .facts-content {
+    padding: 0 20px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .facts-box-container {
+    margin-top: 10px;
+    width: 100%;
+
+    padding: 10px;
   }
 }
