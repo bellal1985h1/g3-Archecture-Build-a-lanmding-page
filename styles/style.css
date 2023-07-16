@@ -82,6 +82,7 @@ nav li a {
 .team-container {
   display: flex;
   align-items: center;
+  margin: 80px auto;
 }
 
 .team-img-container {
@@ -112,24 +113,35 @@ nav li a {
 }
 .our {
   color: #131313;
+  font-size: 2.7rem;
+  font-weight: 700;
 }
+
+/* Small/mobile device */
 
 @media screen and (max-width: 576px) {
-  .nav {
+  .nav,
+  .team-container {
     flex-direction: column;
   }
-  header {
+  header,
+  .team-content {
     padding: 20px;
+  }
+  .team-img-container {
+    grid-template-columns: 1fr;
   }
 }
 
-/* Team section styles */
+/* Medium device */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .nav {
+  .nav,
+  .team-container {
     flex-direction: column;
   }
   header {
     padding: 20px;
+    margin: auto;
   }
 }
