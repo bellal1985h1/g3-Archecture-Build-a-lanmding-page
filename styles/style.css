@@ -79,18 +79,7 @@ nav li a {
 @media screen and (max-width: 576px) {
   /* Header Section */
   header {
-    padding: 20px;
-  }
-  nav {
-    flex-direction: column;
-  }
-}
-
-/* Medium  device */
-@media screen and (min-width: 577px) and (max-width: 992px) {
-  /* Header Section */
-  header {
-    padding: 20px;
+    padding: 10px;
   }
   nav {
     flex-direction: column;
