@@ -24,7 +24,7 @@ header {
   background-color: rgba(255, 144, 14, 0.1);
   padding: 50px 240px;
 }
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,13 +75,20 @@ nav li a {
   margin-top: 10px;
 }
 
-/* Mobile/ small device */
 @media screen and (max-width: 576px) {
-  /* Header Section */
-  header {
-    padding: 10px;
-  }
-  nav {
+  .nav {
     flex-direction: column;
+  }
+  header {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992) {
+  .nav {
+    flex-direction: column;
+  }
+  header {
+    padding: 20px;
   }
 }
