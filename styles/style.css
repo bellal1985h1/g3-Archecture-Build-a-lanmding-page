@@ -176,13 +176,79 @@ nav li a {
   padding: 40px 200px;
 }
 
+/* love related styles */
+.love {
+  display: flex;
+  justify-content: space-between;
+}
+.love-box {
+  padding: 30px 40px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 10px;
+}
+.love-title {
+  max-width: 368px;
+  color: #131313;
+  font-size: 45px;
+
+  font-weight: 700;
+  line-height: normal;
+}
+.love-title {
+  color: #131313;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.love-description {
+  color: #727272;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin-top: 10px;
+}
+
+/* .love-photo-container {
+} */
+.love-photo-container {
+  width: 100%;
+  margin-left: 100px;
+}
+.love-photo-container img {
+  width: 100%;
+}
+
+.badge {
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  background: #ff900e;
+  width: 242px;
+  height: 100px;
+  position: relative;
+  top: -55px;
+  left: -60px;
+}
+.badge-title {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 70px; /* 107.692% */
+}
+
 /* Small/mobile device */
 
 @media screen and (max-width: 576px) {
   .nav,
   .team-container,
   .facts-box-container,
-  .sponsor-img-container {
+  .sponsor-img-container,
+  .love {
     flex-direction: column;
   }
   header,
@@ -200,6 +266,19 @@ nav li a {
   }
   .footer {
     padding: 10px 20px;
+  }
+  .love {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .love-photo-container img {
+    width: 100%;
+    margin: auto;
+  }
+  .love-photo-container {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
 
